@@ -1,4 +1,4 @@
-# Remove Comments
+# JS/TS Comment Remover - Extension
 
 A Visual Studio Code extension that removes all comments from TypeScript and JavaScript files.
 
