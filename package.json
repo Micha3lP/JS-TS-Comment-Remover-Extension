@@ -2,11 +2,12 @@
   "name": "js-ts-comment-remover",
   "displayName": "JS/TS Comment Remover",
   "description": "Remove all comments from TypeScript and JavaScript files",
+  "icon": "src/assets/logo.png",
   "version": "0.0.1",
   "publisher": "MichaelPanches",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/remove-comments.git"
+    "url": "https://github.com/Micha3lP/JS-TS-Comment-Remover-Extension"
   },
   "license": "MIT",
   "engines": { "vscode": "^1.74.0" },
