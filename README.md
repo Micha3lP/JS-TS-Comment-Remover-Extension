@@ -2,6 +2,22 @@
 
 A Visual Studio Code extension that removes all comments from TypeScript and JavaScript files.
 
+## Usage
+
+### Remove Comments from Current File
+
+- Open a TypeScript or JavaScript file in VS Code
+- Right-click in the editor
+- Select "Remove Comments" from the context menu
+
+### Remove Comments from Selected Files
+
+- In the Explorer panel, select one or more TypeScript/JavaScript files
+- Right-click on the selected files
+- Select "Remove Comments"
+
+The extension will process the files and remove all single-line (`//`) and multi-line (`/* */`) comments, preserving the code structure and formatting.
+
 ## Features
 
 - Remove comments from the current open file
@@ -25,20 +41,6 @@ vsce package
 ```
 
 Then install the generated `.vsix` file.
-
-## Usage
-
-### Remove Comments from Current File
-
-- Right-click in an open TypeScript or JavaScript file
-- Select "Remove Comments" from the context menu
-
-### Remove Comments from Selected Files
-
-- Select one or more TypeScript/JavaScript files in the Explorer
-- Right-click and select "Remove Comments"
-
-The extension will process the files and remove all single-line (`//`) and multi-line (`/* */`) comments, preserving the code structure and formatting.
 
 ## Requirements
 
