@@ -1,0 +1,54 @@
+{
+  "name": "remove-comments",
+  "displayName": "Remove Comments",
+  "description": "Remove all comments from TypeScript and JavaScript files",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/remove-comments.git"
+  },
+  "license": "MIT",
+  "engines": { "vscode": "^1.74.0" },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onCommand:remove-comments.removeFromCurrentFile",
+    "onCommand:remove-comments.removeFromSelectedFiles"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "remove-comments.removeFromCurrentFile", "title": "Remove Comments" },
+      { "command": "remove-comments.removeFromSelectedFiles", "title": "Remove Comments" }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "remove-comments.removeFromCurrentFile",
+          "when": "resourceLangId == typescript || resourceLangId == javascript || resourceLangId == typescriptreact || resourceLangId == javascriptreact",
+          "group": "1_modification@1"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "remove-comments.removeFromSelectedFiles",
+          "when": "resourceExtname =~ /\\.(ts|tsx|js|jsx)$/",
+          "group": "2_workspace@1"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^5.6.3",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
