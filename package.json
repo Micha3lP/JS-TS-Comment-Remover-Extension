@@ -1,5 +1,5 @@
 {
-  "name": "remove-comments",
+  "name": "js-ts-comment-remover",
   "displayName": "JS/TS Comment Remover",
   "description": "Remove all comments from TypeScript and JavaScript files",
   "version": "0.0.1",
